@@ -15,9 +15,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var textLock: UITextField!
     @IBOutlet weak var switchLock: UISwitch!
     
+    let zipDelegate = TextZipDelegate()
+    let centDelegate = TextCentDelegate()
+    let lockDelegate = TextLockDelegate()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        textZIP.delegate = zipDelegate
+        textCent.delegate = centDelegate
+        textLock.delegate = lockDelegate
+        
     }
 
     override func didReceiveMemoryWarning() {

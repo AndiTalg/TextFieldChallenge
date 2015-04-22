@@ -13,6 +13,9 @@
 		87BD4D791AE764A40084240B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87BD4D781AE764A40084240B /* Images.xcassets */; };
 		87BD4D7C1AE764A40084240B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87BD4D7A1AE764A40084240B /* LaunchScreen.xib */; };
 		87BD4D881AE764A40084240B /* TextFieldChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD4D871AE764A40084240B /* TextFieldChallengeTests.swift */; };
+		87BD4D931AE767480084240B /* TextZipDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD4D921AE767480084240B /* TextZipDelegate.swift */; };
+		87BD4D951AE767650084240B /* TextCentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD4D941AE767650084240B /* TextCentDelegate.swift */; };
+		87BD4D971AE767780084240B /* TextLockDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BD4D961AE767780084240B /* TextLockDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		87BD4D811AE764A40084240B /* TextFieldChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFieldChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BD4D861AE764A40084240B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87BD4D871AE764A40084240B /* TextFieldChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldChallengeTests.swift; sourceTree = "<group>"; };
+		87BD4D921AE767480084240B /* TextZipDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextZipDelegate.swift; sourceTree = "<group>"; };
+		87BD4D941AE767650084240B /* TextCentDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCentDelegate.swift; sourceTree = "<group>"; };
+		87BD4D961AE767780084240B /* TextLockDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextLockDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 			children = (
 				87BD4D711AE764A40084240B /* AppDelegate.swift */,
 				87BD4D731AE764A40084240B /* ViewController.swift */,
+				87BD4D911AE7671B0084240B /* TextFieldDelegates */,
 				87BD4D751AE764A40084240B /* Main.storyboard */,
 				87BD4D781AE764A40084240B /* Images.xcassets */,
 				87BD4D7A1AE764A40084240B /* LaunchScreen.xib */,
@@ -110,6 +117,16 @@
 				87BD4D861AE764A40084240B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87BD4D911AE7671B0084240B /* TextFieldDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				87BD4D921AE767480084240B /* TextZipDelegate.swift */,
+				87BD4D941AE767650084240B /* TextCentDelegate.swift */,
+				87BD4D961AE767780084240B /* TextLockDelegate.swift */,
+			);
+			name = TextFieldDelegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87BD4D971AE767780084240B /* TextLockDelegate.swift in Sources */,
+				87BD4D931AE767480084240B /* TextZipDelegate.swift in Sources */,
 				87BD4D741AE764A40084240B /* ViewController.swift in Sources */,
 				87BD4D721AE764A40084240B /* AppDelegate.swift in Sources */,
+				87BD4D951AE767650084240B /* TextCentDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
