@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         textZIP.delegate = zipDelegate
         textCent.delegate = centDelegate
         textLock.delegate = lockDelegate
-        
+        textLock.enabled = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,6 +33,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
  
+    @IBAction func switchToggled(sender: UISwitch) {
+        if sender.on {
+            self.textLock.enabled = true
+        } else {
+            self.textLock.enabled = false
+        }
+    }
 
 }
 
